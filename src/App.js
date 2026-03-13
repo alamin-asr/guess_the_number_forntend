@@ -14,7 +14,7 @@ function App() {
 
     try {
       // Update this URL to your deployed backend URL when deploying
-      const apiUrl = process.env.REACT_APP_API_URL || 'https://guess-the-number-backend-aj6r.onrender.com';
+      const apiUrl = process.env.REACT_APP_API_URL;
       
       const response = await fetch(`${apiUrl}/api/v1/guess`, {
         method: 'POST',
